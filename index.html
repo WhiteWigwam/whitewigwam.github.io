@@ -14,39 +14,44 @@
 
 <body>
 
-
-
-
 	<table border="1">
 		<tr></tr>
 
 		<tr>
 			<td style="width:200px;">Ширина окна</td>
-			<td id="row1d2" style="width:75px;">1280</td>
+			<td id="row1d2" style="width:75px;">==/==</td>
 		</tr>
 
 		<tr>
 			<td>Высота окна</td>
-			<td id="row2d2">700</td>
+			<td id="row2d2">==/==</td>
 		</tr>
 	</table>
 
-	<input onclick="change()" type="button" value="Получить" id="Button"></input>
+	<input onclick="change()" type="button" value="Получить разрешение" id="Button" class="btn">
+</input>
 
-	<div class="batia">
+<hr style="margin-top: 0; margin-bottom: 3px;  opacity: 0.5;">
+
+<div class="batia">
 	<div class="container">
-
 		<div class="item"></div>
 		<div class="item"></div>
 		<div class="item"></div>
 		<div class="item"></div>
-		
-<div class="blockA"></div>
-	</div>
-	
+		<div id="blockW"class="blockW"></div>
 	</div>
 
-	<script type="text/javascript" src="main.js"></script>
+</div>
+ 
+ 
+<input onclick="weather()" type="button" value="Получить погоду" id="Button2" class="btn">
+</input>
+
+
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 </body>
 
 </html>
+
