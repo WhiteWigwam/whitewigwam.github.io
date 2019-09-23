@@ -13,7 +13,7 @@ function change()
 function weather(){
 	$(document).ready(function(){
 		$.get(
-			"http://api.openweathermap.org/data/2.5/weather",
+			"https://api.openweathermap.org/data/2.5/weather",
 			{
 				"id":"687700",
 				"appid":"aca2794480d2faec2d7717083dbacfba"
