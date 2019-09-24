@@ -23,7 +23,8 @@ function weather(){
 				let ww = data.weather[0].icon;
 				console.log(ww);
 				ww = "http://openweathermap.org/img/wn/" + ww +".png";
-				document.getElementById("blockW").style.cssText = "background-image:url("+ww+")";
+				//document.getElementById("blockW").style.cssText = "background-repeat: no-repeat";
+				document.getElementById("blockW").style.cssText = "background-image:url("+ww+");background-repeat: no-repeat;background-size:cover";
 				//document.getElementById("blockW").style = "color: blue;font-size:25px;background-image:url('http://openweathermap.org/img/wn/01n.png');";
 				let tmp = (data.main.temp)-273;
 				console.log(ww);
