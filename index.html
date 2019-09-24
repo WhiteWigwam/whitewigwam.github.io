@@ -33,23 +33,34 @@
 
 <hr style="margin-top: 0; margin-bottom: 3px;  opacity: 0.5;">
 
-<div class="batia">
-	<div class="container">
-		<div class="item">Температура</div>
-		<div class="item">Влажность</div>
-		<div class="item">Ветер</div>
-		<div class="item">Давление</div>
-		<div class="item">Погода общая</div>
 
-		<div id="blockW"class="blockW"></div>
+<div style="" class="container">
+	<div id="item1" class="item">
+		<div class="containerData">
+			<div id="weatherBlocStart" class="itemData"></div> 
+		</div>	
 	</div>
 
+	<div id="item1" class="item">
+		<div class="containerData">
+			<div id="weatherBlocCenter" class="itemData"></div>									
+		</div>	
+	</div>
+
+	<div id="item1" class="item">
+		<div class="containerData">
+			<div id="weatherBlocEnd" class="itemData">  </div>									
+		</div>
+	</div>
+
+	<div id="blockW"class="blockW"></div>
 </div>
- 
- 
+
+
+
+
 <input onclick="weather()" type="button" value="Получить погоду" id="Button2" class="btn">
 </input>
-
 
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>

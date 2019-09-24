@@ -1,9 +1,9 @@
 .item{
 
     height: 100px;
-    width: 100px;
-    background: red;
+    width: 33%;
     margin: 5px;
+    justify-content: center;
 
 }
 
@@ -17,10 +17,21 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
-    background: grey;
+    background: #a0a0a0;
     height: 300px;
     position: relative;
     
+}
+
+.containerData{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: nowrap;
+    background: grey;
+    position: relative;
+    height: 100px;
 }
 
 
@@ -42,3 +53,8 @@ border: 1px solid black;
  position: relative;
 
 }*/
+
+p {
+    margin: 0;
+    padding: 0;
+}
