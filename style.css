@@ -17,19 +17,20 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
-    background: #a0a0a0;
-    height: 300px;
+    background: #6e8a84;
+    /*height: 300px;*/
     position: relative;
-    
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .containerData{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: nowrap;
-    background: grey;
+    background: #5b6d7e;
     position: relative;
     height: 100px;
 }
@@ -38,23 +39,30 @@
 .blockW{
 display: block;
 position: absolute;
-left:1%;
-top: 50%;
+left:9%;
+top: 10%;
 
+font-size: 30px;
 
-width: 120px;
-height: 120px;
-border: 1px solid black;
+width: 50px;
+height: 50px;
+/*border: 1px solid black;
+*/
 }
 
-
-/*.batia{
-
- position: relative;
-
-}*/
 
 p {
     margin: 0;
     padding: 0;
+}
+
+.containerDataStart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: #5b6d7e;
+    position: relative;
+    height: 100px;
 }

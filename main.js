@@ -1,12 +1,12 @@
 
-function change()
-{
-	var h = window.innerHeight;
-	var w = window.innerWidth;
+// function change()
+// {
+// 	var h = window.innerHeight;
+// 	var w = window.innerWidth;
 
-	document.getElementById("row1d2").innerHTML=w; 
-	document.getElementById("row2d2").innerHTML=h; 
-}
+// 	document.getElementById("row1d2").innerHTML=w; 
+// 	document.getElementById("row2d2").innerHTML=h; 
+// }
 
 
 
@@ -21,17 +21,18 @@ function weather(){
 			function(data){
 				console.log(data);
 				let ww = data.weather[0].icon;
+				let outStart1 = '';
+				let outStart2 = '';
 				let outCenter = '';
-				let outStart = '';
 				let outEnd = '';
 				console.log(ww);
 				ww = "http://openweathermap.org/img/wn/" + ww +".png";
 				//document.getElementById("blockW").style.cssText = "background-repeat: no-repeat";
-				document.getElementById("blockW").style.cssText = "background-image:url("+ww+");background-repeat: no-repeat;background-size:cover";
+				//document.getElementById("blockW").style.cssText = "background-image:url("+ww+");background-repeat: no-repeat;background-size:cover";
 				//document.getElementById("blockW").style = "color: blue;font-size:25px;background-image:url('http://openweathermap.org/img/wn/01n.png');";
-				let tmp = (data.main.temp)-273;
-				
-				document.getElementById("blockW").innerHTML = tmp;
+				let tmpX = (Math.round(((data.main.temp)-273)*10))/10;
+				let pref = (tmpX>0)? "+" : "";
+				document.getElementById("blockW").innerHTML = pref+tmpX+'&#176;C</p>';
 
 				console.log(data.main.humidity);
 				console.log(data.main.pressure);
@@ -48,19 +49,19 @@ function weather(){
 				console.log(data.dt);
 				console.log(data.clouds.all);
 
-				outStart += '<p style = "text-align:center;margin: 0;padding: 0;"><img src='+ww+'></p>';
-				outStart += '<p>Температура: '+ (Math.round(tmp*10))/10+'&#176</p>';
-				outStart += '<p>'+data.weather[0].main+'</p>';
-				outStart += '<p>'+data.weather[0].description+'</p>';
+				 outStart1 += '<p style = "text-align:center;margin: 0;padding: 0;"><img style="width: 100px;height: 100px;" src='+ww+'></p>';
+				 $('#weatherBlocStart1').html(outStart1);
 
-
-				$('#weatherBlocStart').html(outStart);
+				//outStart2 += '<p>Температура: '+ tmpX+'&#176</p>';
+				outStart2 += '<p>'+data.weather[0].main+'</p>';
+				outStart2 += '<p>'+data.weather[0].description+'</p>';
+				$('#weatherBlocStart2').html(outStart2);
 
 
 				outCenter += "Влажность: "+ data.main.humidity+"%<br>";
 				outCenter += "Давление: "+ data.main.pressure+"<br>";
 				outCenter += "Ветер: "+ data.wind.speed+" м/с<br>";
-				outCenter += "Видимость: "+ data.wind.speed+" м/с<br>";
+				outCenter += "Видимость: "+ data.visibility/1000+" км<br>";
 				$('#weatherBlocCenter').html(outCenter);
 
 				
@@ -68,7 +69,7 @@ function weather(){
 
 				outEnd += "Восход: "+unixTime(data.sys.sunrise)+"<br>";
 				outEnd += "Закат: "+unixTime(data.sys.sunset)+"<br>";
-				outEnd += "Последнее обновление данных: "+unixTime(data.dt)+"<br>";
+				outEnd += "Последнее обновление: "+unixTime(data.dt)+"<br>";
 				$('#weatherBlocEnd').html(outEnd);
 
 			}
