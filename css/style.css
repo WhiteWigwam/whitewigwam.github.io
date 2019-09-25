@@ -58,8 +58,9 @@ body{
     font-family: 'Droid Serif', serif;
     font-size: 14px;
     color: #2f2f2f;
-    background-color: #f9f7f1;
+    background-color: #b9d5fd;
     margin: 0.6%;
+    color:#071739;
    /* background-image: url("../paper_texture309.jpg"); */
 }
 
@@ -141,7 +142,11 @@ p {
       
     }
     .item{
-          width: 80%;
+          width: 100%;
+    }
+
+    header{
+        font-size: 45px;
     }
 
 }
