@@ -32,28 +32,34 @@ function weather(){
 				//document.getElementById("blockW").style = "color: blue;font-size:25px;background-image:url('http://openweathermap.org/img/wn/01n.png');";
 				let tmpX = (Math.round(((data.main.temp)-273)*10))/10;
 				let pref = (tmpX>0)? "+" : "";
-				document.getElementById("blockW").innerHTML = pref+tmpX+'&#176;C</p>';
+				let rezTmp = pref+tmpX+'&#176;C</p>';
+				//document.getElementById("blockW").innerHTML = rezTmp;
 
-				console.log(data.main.humidity);
-				console.log(data.main.pressure);
-				console.log(data.sys.sunrise);
-				console.log(data.sys.sunset);
-
-
-				console.log(data.visibility);
-				console.log(data.weather[0].main);
-				console.log(data.weather[0].description);
-				console.log(data.wind.speed);
+				// console.log(data.main.humidity);
+				// console.log(data.main.pressure);
+				// console.log(data.sys.sunrise);
+				// console.log(data.sys.sunset);
 
 
-				console.log(data.dt);
-				console.log(data.clouds.all);
+				// console.log(data.visibility);
+				// console.log(data.weather[0].main);
+				// console.log(data.weather[0].description);
+				// console.log(data.wind.speed);
+
+
+				// console.log(data.dt);
+				// console.log(data.clouds.all);
+
+				
+				//outStart0 += '<p>'+rezTmp+'</p>';
+				$('#weatherBlocStart0').html('<p>'+rezTmp+'</p>');
+
 
 				 outStart1 += '<p style = "text-align:center;margin: 0;padding: 0;"><img style="width: 100px;height: 100px;" src='+ww+'></p>';
 				 $('#weatherBlocStart1').html(outStart1);
 
 				//outStart2 += '<p>Температура: '+ tmpX+'&#176</p>';
-				outStart2 += '<p>'+data.weather[0].main+'</p>';
+				//outStart2 += '<p>'+data.weather[0].main+'</p><br>';
 				outStart2 += '<p>'+data.weather[0].description+'</p>';
 				$('#weatherBlocStart2').html(outStart2);
 

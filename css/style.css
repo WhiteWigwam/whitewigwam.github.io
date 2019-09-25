@@ -1,0 +1,145 @@
+.item{
+
+    display: flex;
+    height: 330px;
+    width: 33%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    /*padding-top: 50px;*/
+
+}
+
+.textCol{
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box; 
+    padding: 10px 0 10px 0; 
+    line-height:2;
+    letter-spacing:2;
+}
+
+
+/*.weatherBlocStart2cl{
+    display: flex;
+  height:  100%; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+
+.head{
+    text-align: center;
+    position: relative;
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 10px 0 10px 0;
+
+}
+
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+    margin: 0.6%;
+   /* background-image: url("../paper_texture309.jpg"); */
+}
+
+
+
+
+
+
+
+
+
+
+.btn{
+    margin-top:3px;
+    margin-bottom: 3px; 
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /*background: #6e8a84;*/
+    /*height: 300px;*/
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.containerData{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    /*background: #5b6d7e;*/
+    position: relative;
+    height: 100px;
+}
+
+
+.blockW{
+    display: block;
+    position: absolute;
+    left:9%;
+    top: 10%;
+
+    font-size: 30px;
+
+    width: 50px;
+    height: 50px;
+/*border: 1px solid black;
+*/
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.containerDataStart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    /*background: #5b6d7e;*/
+    position: relative;
+    height: 100px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+}

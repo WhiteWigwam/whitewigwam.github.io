@@ -2,74 +2,79 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>We2</title>
+  <!-- Font Awesome -->
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Main JS</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-
+  <!-- Bootstrap core CSS -->
+ 
+  <link href="css/style.css" rel="stylesheet">
+  <link href="font/playfair/playfair.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- 	<table border="1">
-		<tr></tr>
+  <!-- Start your project here-->
+ <div class="head">
+ <header> Прогноз погоды </header>
+ <div class="subhead">Запорожье, Среда Сентябрь 30, 2019 год</div>
+</div>
 
-		<tr>
-			<td style="width:200px;">Ширина окна</td>
-			<td id="row1d2" style="width:75px;">==/==</td>
-		</tr>
+ 
 
-		<tr>
-			<td>Высота окна</td>
-			<td id="row2d2">==/==</td>
-		</tr>
-	</table>
+ <div style="margin-top:30px;" class="container">
+  
 
-	<input onclick="change()" type="button" value="Получить разрешение" id="Button" class="btn">
-</input>
+  <div id="item1" class="item">
+    <div class="containerDataStart">
+      <div style="font-size: 30px;" id="weatherBlocStart0">
+      </div>
+      <div id="weatherBlocStart1">
+      </div> 
+      <div style="font-size: 25px;" id="weatherBlocStart2" class="weatherBlocStart2cl">
+      
 
-<hr style="margin-top: 0; margin-bottom: 3px;  opacity: 0.5;">
- -->
-
-<div style="" class="container">
-	
-
-	<div id="item1" class="item">
-		<div class="containerDataStart">
-			<div id="weatherBlocStart1" class="itemData">
-			</div> 
-			<div id="weatherBlocStart2" class="itemData">
-			</div> 
-		</div>	
-	</div>
+      </div> 
+    </div>  
+  </div>
 
 
-	<div id="item1" class="item">
-		<div class="containerData">
-			<div id="weatherBlocCenter" class="itemData"></div>									
-		</div>	
-	</div>
+  <div id="item1" class="item">
+    <div class="containerData">
+      <div id="weatherBlocCenter" class="textCol">
+      </div>                 
+    </div>  
+  </div>
 
 
-	<div id="item1" class="item">
-		<div class="containerData">
-			<div id="weatherBlocEnd" class="itemData">  </div>									
-		</div>
-	</div>
+  <div id="item1" class="item">
+    <div class="containerData">
+      <div  id="weatherBlocEnd" class="textCol">  </div>                  
+    </div>
+  </div>
 
 
-	<div id="blockW"class="blockW"></div> 
+
+
+<!-- 
+  <div id="blockW"class="blockW">
+    
+  </div>  -->
 </div> 
 
-<input style=" margin-left: 50px;" onclick="weather()" type="button" value="Получить погоду" id="Button2" class="btn">
+<input style="margin-left: 50px;" onclick="weather()" type="button" value="Получить погоду" id="Button2" class="btn">
 </input>
 
-<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+  <!-- Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+ 
 </body>
 
 </html>
-
